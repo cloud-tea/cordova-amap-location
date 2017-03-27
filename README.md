@@ -21,7 +21,8 @@
 # cordova-amap-location
 
 ## 描述
-	高德(amap)定位cordova插件，采用高德(amap)最新的api版本，IOS库采用AMapFoundationKit 1.3.1，AMapLocationKit 2.2.0。
+	高德(amap)定位和地理围栏cordova插件，采用高德(amap)最新的api版本，
+	IOS库采用AMapFoundationKit 2.3.1.81836fd9，安卓库 AMapLocationKit 3.3.0_20170108
 
 
 ## 安装
@@ -37,6 +38,14 @@
 
 - 关闭定时获取定位
 `window.plugins.aMapLocationPlugin.clearWatch(success, fail);`
+
+- 开启地理围栏功能
+`window.plugins.aMapLocationPlugin.addCircleRegionForMonitoringWithCenter([
+	 latitude, longitude, 100, 'tag'
+],success, fail)`
+
+- 移除所有的地理围栏监控点
+`window.plugins.aMapLocationPlugin.removeAllFence(success, fail)`
 
 ## callback function have a params
 
