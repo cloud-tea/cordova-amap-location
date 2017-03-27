@@ -55,7 +55,7 @@ var app = {
             })
         },function(response){
             alert(' error : '+  response.code + '\r\n' + response.message);
-            
+            console.log(response);
         })
     }
 };
