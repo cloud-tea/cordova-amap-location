@@ -1,0 +1,67 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"AMapLocation\"><param name=\"ios-package\" value=\"AMapLocation\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "AMapAppKey": [
+                        {
+                            "xml": "<string>218ff20c4321f46c5edd70ed140d70af</string>",
+                            "count": 1
+                        }
+                    ],
+                    "NSLocationWhenInUseUsageDescription": [
+                        {
+                            "xml": "<string>获取位置信息</string>",
+                            "count": 1
+                        }
+                    ],
+                    "NSLocationAlwaysUsageDescription": [
+                        {
+                            "xml": "<string>获取位置信息</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "cn.bolang.znwk"
+        },
+        "cordova-amap-location": {
+            "ANDROID_KEY": "bea8288b3bb5b5de4b0fe991fcec02db",
+            "IOS_KEY": "218ff20c4321f46c5edd70ed140d70af",
+            "PACKAGE_NAME": "cn.bolang.znwk"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "cordova-amap-location.AMapLocation",
+            "file": "plugins/cordova-amap-location/www/location.js",
+            "pluginId": "cordova-amap-location",
+            "clobbers": [
+                "window.plugins.aMapLocationPlugin"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.2",
+        "cordova-amap-location": "1.0.6"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-amap-location": {
+        "source": {
+            "type": "local",
+            "path": ".."
+        },
+        "is_top_level": true,
+        "variables": {
+            "ANDROID_KEY": "bea8288b3bb5b5de4b0fe991fcec02db",
+            "IOS_KEY": "218ff20c4321f46c5edd70ed140d70af"
+        }
+    }
+}

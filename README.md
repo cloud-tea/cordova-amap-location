@@ -78,5 +78,7 @@
 ### Supported Platforms
 - Android
 - iOS
+* a)左侧目录中选中工程名，开启 TARGETS->Capabilities->Background Modes
+* b)在 Background Modes中勾选 Location updates
 
 

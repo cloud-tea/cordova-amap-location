@@ -1,0 +1,9 @@
+{
+    "JavaScriptcore.framework": 1,
+    "SystemConfiguration.framework": 1,
+    "CoreTelephony.framework": 1,
+    "Security.framework": 1,
+    "libz.tbd": 1,
+    "libc++.tbd": 1,
+    "libstdc++.6.0.9.tbd": 1
+}

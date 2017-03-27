@@ -17,6 +17,16 @@ AMapLocationPlugin.prototype.clearWatch = function (success ,error) {
     this.call_native("clearWatch", [], success ,error);
 };
 
+AMapLocationPlugin.prototype.removeAllFence = function (success ,error) {
+    this.call_native("removeAllFence", [], success ,error);
+};
+/*
+	args: [latitude, longitude, radius, customId];
+*/
+AMapLocationPlugin.prototype.addCircleRegionForMonitoringWithCenter = function (args, success ,error) {
+    this.call_native("addCircleRegionForMonitoringWithCenter", args, success ,error);
+};
+
 if (!window.plugins) {
     window.plugins = {};
 }

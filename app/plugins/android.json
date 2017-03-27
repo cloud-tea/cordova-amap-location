@@ -1,0 +1,20 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "cn.bolang.znwk"
+        },
+        "cordova-amap-location": {
+            "ANDROID_KEY": "bea8288b3bb5b5de4b0fe991fcec02db",
+            "IOS_KEY": "218ff20c4321f46c5edd70ed140d70af",
+            "PACKAGE_NAME": "cn.bolang.znwk"
+        }
+    },
+    "dependent_plugins": {}
+}
