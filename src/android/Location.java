@@ -154,6 +154,21 @@ public class Location extends CordovaPlugin implements AMapLocationListener {
             //会清除所有围栏
             mGeoFenceClient.removeGeoFence();
             return true;
+        } else if(action.equals("removeCustomFence")){
+            List<GeoFence> geoFences = mGeoFenceClient.getAllGeoFence();
+            String customIdToRemove = args.getString(0);
+
+            for(GeoFence fence: geoFences) {
+                String customId = fence.getCustomId();
+
+                if(customIdToRemove == customId) {
+                    mGeoFenceClient.removeGeoFence(fence);
+
+                    break;
+                }
+            }
+
+            return true;
         } else {
             return false;
         }

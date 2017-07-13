@@ -20,6 +20,10 @@ AMapLocationPlugin.prototype.clearWatch = function (success ,error) {
 AMapLocationPlugin.prototype.removeAllFence = function (success ,error) {
     this.call_native("removeAllFence", [], success ,error);
 };
+
+AMapLocationPlugin.prototype.removeCustomFence = function (args, success ,error) {
+    this.call_native("removeCustomFence", args, success ,error);
+};
 /*
 	args: [latitude, longitude, radius, customId];
 */

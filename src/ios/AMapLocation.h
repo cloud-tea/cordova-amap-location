@@ -20,4 +20,10 @@
 
 - (void)clearWatch:(CDVInvokedUrlCommand*)command;
 
+- (void)removeAllFence:(CDVInvokedUrlCommand*)command;
+
+- (void)removeCustomFence:(CDVInvokedUrlCommand*)command;
+
+- (void)addCircleRegionForMonitoringWithCenter:(CDVInvokedUrlCommand*)command;
+
 @end

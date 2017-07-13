@@ -56,6 +56,14 @@
     NSLog(@"所有地理围栏移除");
 }
 
+- (void) removeCustomFence:(CDVInvokedUrlCommand*)command  {
+    NSString* customID = [command.arguments objectAtIndex:0];
+    [self.geoFenceManager removeGeoFenceRegionsWithCustomID:customID];
+
+    NSLog(@"地理围栏%@已移除!", customID);
+}
+
+
 - (void)amapGeoFenceManager:(AMapGeoFenceManager *)manager didAddRegionForMonitoringFinished:(NSArray<AMapGeoFenceRegion *> *)regions customID:(NSString *)customID error:(NSError *)error {
     CDVPluginResult* result = nil;
 
