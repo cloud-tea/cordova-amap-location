@@ -141,6 +141,8 @@ public class Location extends CordovaPlugin implements AMapLocationListener {
                 @Override
                 public void run() {
                     addCircleRegionForMonitoringWithCenter(args);
+
+                    Log.d(TAG, "添加地理围栏" + args);
                 }
             });
 
@@ -150,6 +152,8 @@ public class Location extends CordovaPlugin implements AMapLocationListener {
             if (mGeoFenceClient == null) {
                 mGeoFenceClient = new GeoFenceClient(this.cordova.getActivity().getApplicationContext());
             }
+
+            Log.d(TAG, "删除所有地理围栏");
 
             //会清除所有围栏
             mGeoFenceClient.removeGeoFence();
@@ -164,6 +168,7 @@ public class Location extends CordovaPlugin implements AMapLocationListener {
                 if(customIdToRemove == customId) {
                     mGeoFenceClient.removeGeoFence(fence);
 
+                    Log.d(TAG, "删除指定的围栏： " + fence.toString());
                     break;
                 }
             }
